@@ -22,9 +22,6 @@ io.on('connection', () => {
 
 });
 
-setInterval(() => {
-  io.sockets.emit('message', 'testing');
-}, 1000);
 
 const players = {}
 io.on('connection', (socket) => {
